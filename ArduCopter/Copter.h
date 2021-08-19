@@ -220,6 +220,7 @@ public:
     friend class ModeThrow;
     friend class ModeZigZag;
     friend class ModeAutorotate;
+    friend class TestMode;
 
     Copter(void);
 
@@ -927,6 +928,9 @@ private:
 #endif
 #if MODE_CIRCLE_ENABLED == ENABLED
     ModeCircle mode_circle;
+#endif
+#if MODE_TESTMODE_ENABLED == ENABLED
+    TestMode mode_test;
 #endif
 #if MODE_DRIFT_ENABLED == ENABLED
     ModeDrift mode_drift;
