@@ -917,7 +917,6 @@ private:
 #endif
 #endif
     ModeAltHold mode_althold;
-    TestMode mode_test;
 #if MODE_AUTO_ENABLED == ENABLED
     ModeAuto mode_auto;
 #endif
@@ -929,6 +928,9 @@ private:
 #endif
 #if MODE_CIRCLE_ENABLED == ENABLED
     ModeCircle mode_circle;
+#endif
+#if MODE_TESTMODE_ENABLED == ENABLED
+    TestMode mode_test;
 #endif
 #if MODE_DRIFT_ENABLED == ENABLED
     ModeDrift mode_drift;
